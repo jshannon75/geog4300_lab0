@@ -1,15 +1,19 @@
 ---
 title: 'Geog4/6300: Lab 0'
 output: github_document
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
 library(tidyverse)
 ```
 
+*Your name: {Your name here}*
+
 This "lab" assignment provides an opportunity to learn the basic mechanics of Github classroom, loading data, and doing some basic operations using the tools in the tidyverse. 
 
-We'll be combining two datasets for this assignment: the New York Times dataset on COVID case counts by county and the American Community Survey's most recent data on county population. You can load them both using the read_csv function and either the URL or path. For example, you can load the ACS data using this function:
+We'll be combining two datasets for this assignment: the New York Times dataset on COVID case counts by county and American Community Survey data on county population. You can load them both using the read_csv function and either the URL or path. For example, you can load the ACS data using this function:
 
 ```{r}
 county_pop<-read_csv("data/pop_acs18.csv")
@@ -30,7 +34,7 @@ Load these data using the read_csv command. You can copy the code above for the 
 
 ## Connecting the data
 
-Next you'll need to join these two datasets using the left_join function (discussed in this week's lectures/scripts). To do so you'll need to have two fields with the same name in each dataset. The fips codes are in both datasets, but they have different names (GEOID and fips) and formats (numeric and character). The following code creates a new variable called fips in the ACS data that's a character using the mutate function.
+Next you'll need to join these two datasets using the inner_join function (discussed in this week's lectures/scripts). To do so you'll need to have two fields with the same name in each dataset. The fips codes are in both datasets, but they have different names (GEOID and fips) and formats (numeric and character). The following code creates a new variable called fips in the ACS data that's a character using the mutate function.
 
 ```{r}
 county_pop<-county_pop %>%
@@ -47,7 +51,7 @@ Using inner_join, join the New York Times dataset to the county population one.
 ```
 
 ### Question 3 (3 points)
-Find some documentation on the inner_join function online or using help in R. How is it different from left_join or full_join? List the source you used for your answer.
+Find some documentation on the inner_join function online or using help in R. Describe how it works, and explain how the results would have been different if you used full_join instead.
 
 {Write your response here.}
 
@@ -64,7 +68,7 @@ Use mutate to calculate a case rate per 100,000 people.
 ```
 
 ### Question 5 (1 point)
-Which Georgia county has the *highest* case rate according to your analysis? You can open the dataset and click on the column name for the rate to arrange from high to low. Give the county name, the rate, and the date when this rate was calculated.
+Which Georgia county has the *highest* case rate based on total cases according to your analysis? You can open the dataset and click on the column name for the rate to arrange from high to low. Give the county name, the rate, and the date when this rate was calculated.
 
 {Your answer goes here.}
 
