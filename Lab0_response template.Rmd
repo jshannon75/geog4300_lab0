@@ -23,7 +23,7 @@ In this dataset, you'll see a county FIPS code (GEOID), county name, the variabl
 
 ## Loading the data
 
-### Question 1 (2 points):
+### Question 1:
 Load these data using the read_csv command. You can copy the code above for the county population data. For the New York Times data, replace the file path name with this URL:
 
 * https://github.com/nytimes/covid-19-data/raw/master/us-counties.csv
@@ -43,14 +43,14 @@ county_pop<-county_pop %>%
 
 Call the function above to rename your data. Now you're ready to join the data.
 
-### Question 2 (2 points)
+### Question 2
 Using inner_join, join the New York Times dataset to the county population one. 
 
 ```{r}
 
 ```
 
-### Question 3 (3 points)
+### Question 3
 Find some documentation on the inner_join function online or using help in R. Describe how it works, and explain how the results would have been different if you used full_join instead.
 
 {Write your response here.}
@@ -60,16 +60,21 @@ Now you can calculate a case rate by county, also using mutate. These are usuall
 
 * newvar = cases / population * 100000
 
-### Question 4 (2 points)
+### Question 4
 Use mutate to calculate a case rate per 100,000 people.
 
 ```{r}
 #Your code goes here
 ```
 
-### Question 5 (1 point)
+### Question 5
 Which Georgia county has the *highest* case rate based on total cases according to your analysis? You can open the dataset and click on the column name for the rate to arrange from high to low. Give the county name, the rate, and the date when this rate was calculated.
 
 {Your answer goes here.}
+
+### Question 6
+Having completed this lab, how do you feel you did on this assignment? What was difficult and/or easy? What did you learn? How would you rate the final product on a low pass/pass/high pass scale?
+
+{Your response goes here.}
 
 That's it! When you're done with this lab, use the Knit command to render it as a Github markdown document. Then push it up to Github using the procedure outlined in this week's videos.
