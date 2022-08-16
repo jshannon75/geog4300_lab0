@@ -28,13 +28,15 @@ Load these data using the read_csv command. You can copy the code above for the 
 
 * https://github.com/nytimes/covid-19-data/raw/master/us-counties.csv
 
+In addition, filter the data so you only have data for May 13, 2022, the last date of observations in the dataset.
+
 ```{r}
 ##Your code goes here.
 ```
 
 ## Connecting the data
 
-Next you'll need to join these two datasets using the inner_join function (discussed in this week's lectures/scripts). To do so you'll need to have two fields with the same name in each dataset. The fips codes are in both datasets, but they have different names (GEOID and fips) and formats (numeric and character). The following code creates a new variable called fips in the ACS data that's a character using the mutate function.
+Next you'll need to join these two datasets using the inner_join function. To do so you'll need to have two fields with the same name in each dataset. The fips codes are in both datasets, but they have different names (GEOID and fips) and formats (numeric and character). The following code creates a new variable called fips in the ACS data that's a character using the mutate function.
 
 ```{r}
 county_pop<-county_pop %>%
@@ -72,8 +74,16 @@ Which Georgia county has the *highest* case rate based on total cases according 
 
 {Your answer goes here.}
 
+
+### Bonus question
+What if you wanted to study only those cases happening in the last six months of the dataset, from November 13, 2021 until May 13, 2022? Use the tools you have been learning for data wrangling in class to identify the number of cases per 100,000 residents during that time period in Georgia. Show your code and call the head of the table when done.
+
+```{r}
+#Your code goes here
+```
+
 ### Question 6
-Having completed this lab, how do you feel you did on this assignment? What was difficult and/or easy? What did you learn? How would you rate the final product on a low pass/pass/high pass scale?
+Having completed this lab, how do you feel you did on this assignment? What was difficult and/or easy? What did you learn?
 
 {Your response goes here.}
 
