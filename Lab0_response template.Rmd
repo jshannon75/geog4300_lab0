@@ -75,7 +75,7 @@ Which Georgia county has the *highest* case rate based on total cases according 
 {Your answer goes here.}
 
 
-### Bonus question
+### Challenge question
 What if you wanted to study only those cases happening in the last six months of the dataset, from November 13, 2021 until May 13, 2022? Use the tools you have been learning for data wrangling in class to identify the number of cases per 100,000 residents during that time period in Georgia. Show your code and call the head of the table when done.
 
 ```{r}
@@ -83,7 +83,7 @@ What if you wanted to study only those cases happening in the last six months of
 ```
 
 ### Question 6
-Having completed this lab, how do you feel you did on this assignment? What was difficult and/or easy? What did you learn?
+Having completed this lab, how do you feel you did on this assignment? Did you hit a home run or just scrape by? What was difficult and/or easy? What did you learn?
 
 {Your response goes here.}
 
