@@ -58,7 +58,7 @@ Find some documentation on the inner_join function online or using help in R. De
 {Write your response here.}
 
 ## Calculating a rate
-Now you can calculate a case rate by county, also using mutate. These are usually reported as cases per 100,000 population You'll need to set up some math that follows the following pattern:
+Now you can calculate a case rate by county, also using mutate. These are usually reported as cases per 100,000 population. You'll need to set up some math that follows the following pattern:
 
 * newvar = cases / population * 100000
 
@@ -82,8 +82,8 @@ What if you wanted to study only those cases happening in the last six months of
 #Your code goes here
 ```
 
-### Question 6
-Having completed this lab, how do you feel you did on this assignment? Did you hit a home run or just scrape by? What was difficult and/or easy? What did you learn?
+### Self-evaluation
+Having completed this lab, how do you feel you did on this assignment? What was difficult and/or easy? What did you learn?
 
 {Your response goes here.}
 

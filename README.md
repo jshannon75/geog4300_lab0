@@ -7,8 +7,7 @@ Complete the lab assignment by filling in the response template. Knit it to a Gi
 * Question 3:<p>
 * Question 4:<p>
 * Question 5:<p>
-* Question 6:<p>
 <p>
-* Bonus question:<p>
+* Challenge question:<p>
 <p>
-Lab assement:
+Lab assessment:
